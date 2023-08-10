@@ -135,10 +135,10 @@ common_docstring: Final = """
             name.
             The result of each function must be a unicode string.
             List/tuple must be of length equal to the number of columns.
-        float_format : one-parameter function, optional, default None
-            Formatter function to apply to columns' elements if they are
-            floats. This function must return a unicode string and will be
-            applied only to the non-``NaN`` elements, with ``NaN`` being
+        float_format : one-parameter function or str, optional, default None
+            Formatter function or format string to apply to columns' elements if
+            they are floats. This function must return a unicode string and will
+            be applied only to the non-``NaN`` elements, with ``NaN`` being
             handled by ``na_rep``.
 
             .. versionchanged:: 1.2.0

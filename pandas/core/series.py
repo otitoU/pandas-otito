@@ -1719,9 +1719,9 @@ class Series(base.IndexOpsMixin, NDFrame):  # type: ignore[misc]
             Buffer to write to.
         na_rep : str, optional
             String representation of NaN to use, default 'NaN'.
-        float_format : one-parameter function, optional
+        float_format : one-parameter function or str, optional
             Formatter function to apply to columns' elements if they are
-            floats, default None.
+            floats or format string, default None.
         header : bool, default True
             Add the Series header (index name).
         index : bool, optional
